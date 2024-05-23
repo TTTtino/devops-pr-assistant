@@ -1,0 +1,21 @@
+{
+  "name": "Devops PR Assistant",
+  "description": "DevOps comment shortcut extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contextMenus", "tabs"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://dev.azure.com/*"],
+      "include_globs": ["https://dev.azure.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "icons": {
+    "512": "assets/CommentBubble.png"
+  }
+}
