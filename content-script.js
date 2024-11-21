@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function (request) {
-  if (request.action === "enter_comment") {
-    enterTextIntoFocusedTextbox(request.comment);
+  if (request.action === "enter_text") {
+    enterTextIntoFocusedTextbox(request.text);
   }
 });
 
