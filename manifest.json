@@ -1,6 +1,6 @@
 {
   "name": "Devops PR Assistant",
-  "description": "DevOps comment shortcut extension",
+  "description": "DevOps comment shortcut extension created for Streets Heaver web team",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["contextMenus", "tabs"],
@@ -15,7 +15,8 @@
       "js": ["content-script.js"]
     }
   ],
-  "icons": {
+  "icons":{
+    "128": "assets/CommentBubble128.png",
     "512": "assets/CommentBubble.png"
   }
 }
