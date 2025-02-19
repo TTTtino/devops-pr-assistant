@@ -15,6 +15,7 @@ chrome.runtime.onInstalled.addListener(async () => {
 chrome.contextMenus.onClicked.addListener((info) => {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     const commentType = COMMENT_TYPES.find((t) => t.id === info.menuItemId);
+    console.log(commentType, tabs);
     commentType !== undefined &&
       chrome.tabs.sendMessage(tabs[0].id, {
         action: "enter_text",
