@@ -1,7 +1,7 @@
 {
   "name": "Devops PR Assistant",
   "description": "DevOps comment shortcut extension created for Streets Heaver web team",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 3,
   "permissions": [
     "contextMenus"
